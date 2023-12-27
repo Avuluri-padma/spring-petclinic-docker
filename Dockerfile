@@ -9,5 +9,5 @@ RUN ./mvnw dependency:resolve
 COPY src ./src
 COPY target/spring-petclinic-*.jar /spring-petclinic.jar
 CMD ["./mvnw", "spring-boot:run"]
-CMD ["java" , "-jar" , "/spring-petclinic.jar]
+CMD ["java" , "-jar" , "/spring-petclinic.jar","--server.port=9092"]
 EXPOSE 8081
