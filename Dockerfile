@@ -10,5 +10,5 @@ COPY src ./src
 COPY target/spring-petclinic-*.jar /spring-petclinic.jar
 CMD ["./mvnw", "spring-boot:run"]
 CMD ["java" , "-jar" , "/spring-petclinic.jar"]
-EXPOSE 3000
+EXPOSE 8082
                                                                                                                                                                    
